@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}หน้าแรก | Chakadee Potisumrit{% endblock %}
+
+{% block content %}
+<section class="bg-white rounded-4 shadow-soft p-4 p-md-5">
+  <h2 class="fw-bold mb-3">สิทธิประกันสังคม</h2>
+  <p class="text-muted mb-4">สรุปสิทธิประโยชน์ของผู้ประกันตนตามมาตรา 33, 39 และ 40</p>
+
+  <div class="table-responsive">
+    <table class="table table-hover align-middle">
+      <thead class="table-primary text-center">
+        <tr>
+          <th>ประเภทสิทธิ</th><th>ม.33</th><th>ม.39</th><th>ม.40</th>
+        </tr>
+      </thead>
+      <tbody class="text-center">
+        <tr><td class="text-start">รักษาพยาบาล</td><td>✔️</td><td>✔️</td><td>❌</td></tr>
+        <tr><td class="text-start">คลอดบุตร</td><td>✔️</td><td>✔️</td><td>❌</td></tr>
+        <tr><td class="text-start">ทุพพลภาพ</td><td>✔️</td><td>✔️</td><td>✔️ (บางแผน)</td></tr>
+        <tr><td class="text-start">ชราภาพ</td><td>✔️</td><td>✔️</td><td>✔️</td></tr>
+        <tr><td class="text-start">เสียชีวิต</td><td>✔️</td><td>✔️</td><td>✔️</td></tr>
+        <tr><td class="text-start">ว่างงาน</td><td>✔️</td><td>✔️</td><td>❌</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+{% endblock %}

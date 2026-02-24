@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}แบบฟอร์ม | Chakadee Potisumrit{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-md-7 col-lg-6">
+    <div class="card shadow-soft p-4 p-md-5">
+      <h3 class="fw-bold mb-3 text-center">ฟอร์มบันทึกข้อมูล</h3>
+      <form>
+        <div class="mb-3">
+          <label class="form-label">ชื่อ</label>
+          <input type="text" class="form-control form-control-lg" placeholder="กรอกชื่อ">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">อายุ</label>
+          <input type="number" class="form-control form-control-lg" placeholder="กรอกอายุ">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">อีเมล</label>
+          <input type="email" class="form-control form-control-lg" placeholder="you@email.com">
+        </div>
+        <button class="btn btn-primary btn-lg w-100">บันทึกข้อมูล</button>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}เกี่ยวกับเรา | Chakadee Potisumrit{% endblock %}
+
+{% block content %}
+<section class="py-4">
+  <h2 class="fw-bold mb-4">เกี่ยวกับเรา</h2>
+  <div class="row g-4">
+    {% for i in "123456" %}
+    <div class="col-md-4 col-sm-6">
+      <div class="card shadow-soft h-100">
+        <img src="https://picsum.photos/600/400?random={{ forloop.counter }}" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">ข้อมูลประกันสังคม</h5>
+          <p class="card-text text-muted">สรุปสิทธิและสวัสดิการสำหรับผู้ประกันตน</p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}
